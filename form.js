@@ -11,6 +11,19 @@ form.addEventListener("submit", (e) => {
   const email = emailValue.value;
   const passwordVal = passwordValue.value;
   const confirm = confirmPassword.value;
-  console.log(user, email);
+  let error = document.querySelector(".form p");
+  const errMessage = "Password must be atleast 8 characters.";
+  const err = "Your passwords does not match";
+  let valid = true;
+  switch (valid) {
+    case passwordVal.length < 8:
+      error.innerText = errMessage;
+      break;
 
+    case passwordVal !== confirm:
+      error.innerText = err;
+      break;
+    default:
+      error.innerText = "";
+  }
 });

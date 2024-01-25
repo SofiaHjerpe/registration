@@ -3,7 +3,7 @@
 # Account Registration
 
 
-5. The `password` must be atleast 8 characters long. If the password is not of length, the input should receive appropriate styling to visualize this for the user. When the passwords is long enough the styling returns to normal _( or to an affirmative state if you would like )_.
+
 
 6. The `confirm password` must be validated to be identical as the `password`. If that's not the case, the input should receive appropriate styling to visualize this for the user, much like the previous part.
 

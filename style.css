@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 10px;
+}
+.username,
+.name,
+.password,
+.confirm-password,
+.email {
+  padding: 5px 10px;
+  width: 200px;
+  height: 46px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: transparent;
+  outline: none;
+}
+input::placeholder {
+  color: blueviolet;
+  font-weight: normal;
+}
+.form p {
+  color: red;
+}
